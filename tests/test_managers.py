@@ -111,7 +111,7 @@ class TestEntityManager(object):
             assert_exc_info_msg(
                 exc_info,
                 "Nonexistent component type: "
-                "`Component1' for entity: `Entity(3)'")
+                "`Component1' for entity: `3'")
 
     def test_remove_entity(
             self, manager, entities, components, component_types):
