@@ -5,7 +5,6 @@ import six
 from ecs.exceptions import (
     NonexistentComponentTypeForEntity, DuplicateSystemTypeError,
     SystemAlreadyAddedToManagerError)
-from ecs.models import Entity
 
 
 class EntityManager(object):
@@ -32,7 +31,7 @@ class EntityManager(object):
         :return: the new entity
         :rtype: :class:`ecs.models.Entity`
         """
-        entity = Entity(self._next_guid)
+        entity = self._next_guid
         self._next_guid += 1
         return entity
 

@@ -2,7 +2,7 @@
 
 from ecs import metadata as _metadata
 # Provide a common namespace for these classes.
-from ecs.models import Entity, Component, System  # NOQA
+from ecs.models import Component, System  # NOQA
 from ecs.managers import EntityManager, SystemManager  # NOQA
 
 
